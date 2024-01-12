@@ -90,9 +90,7 @@ namespace FinalProjectATM
                 ))
             );
 
-
             var path = Path.GetFullPath(@"C:\Users\User\Desktop\Programming\COMM School\FinalProjectATM\FinalProjectATM\");
-
             string fileName = "Data.json";
             string filePath = Path.Combine(path, fileName);
 
@@ -102,18 +100,11 @@ namespace FinalProjectATM
                 string jsonContent = JsonConvert.SerializeObject(o, Formatting.Indented);
                 File.WriteAllText(filePath, jsonContent);
                 Console.WriteLine($"JSON file '{filePath}' created successfully.");
-
-                // Return the actual data or simply return without a value
-                // return o;
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"An error occurred: {ex.Message}");
-                // Handle the error as needed
             }
-
-            // You can return the actual data or void based on your requirement
-            // return o;
         }
     }
 }
