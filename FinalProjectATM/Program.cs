@@ -45,14 +45,7 @@ namespace FinalProjectATM
                     }
                 }
             }
-            //catch (JsonReaderException)
-            //{
-            //    Console.WriteLine("Error reading JSON file. It might be invalid JSON.");
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine($"An error occurred: {ex.Message}");
-            //}
+            
 
             /*----------  REGISTER ACCOUNT  ----------*/
             //var storedData = new RegisterNewClient().Register();
