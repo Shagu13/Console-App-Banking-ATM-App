@@ -1,7 +1,7 @@
 ﻿
 namespace FinalProjectATM
 {
-    public class Path
+    public class filePath
     {
         public string GetPath()
         {

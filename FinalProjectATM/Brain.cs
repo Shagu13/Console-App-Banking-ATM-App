@@ -337,7 +337,7 @@ namespace FinalProjectATM
 
         private void GetLastTransactions()
         {
-            var brain = new Brain(new Path().GetPath());
+            var brain = new Brain(new filePath().GetPath());
             var jsonData = brain.LoadData();
 
             if (jsonData != null)

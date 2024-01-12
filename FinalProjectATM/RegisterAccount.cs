@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
 
@@ -29,7 +30,7 @@ namespace FinalProjectATM
     }
     public class RegisterNewClient
     {
-        public string Register()
+        public void Register()
         {
             var check = new Check();
             Console.Write("Please type your first name: ");
@@ -89,12 +90,30 @@ namespace FinalProjectATM
                 ))
             );
 
-            // Save New User Data to a Json File
-            var path = @"C:\Users\User\Desktop\Programming\COMM School\FinalProjectATM\FinalProjectATM\Data.json";
-            File.WriteAllText(path, o.ToString());
-            var jsonString = File.ReadAllText(path);
 
-            return jsonString;
+            var path = Path.GetFullPath(@"C:\Users\User\Desktop\Programming\COMM School\FinalProjectATM\FinalProjectATM\");
+
+            string fileName = "Data.json";
+            string filePath = Path.Combine(path, fileName);
+
+            try
+            {
+                Directory.CreateDirectory(path);
+                string jsonContent = JsonConvert.SerializeObject(o, Formatting.Indented);
+                File.WriteAllText(filePath, jsonContent);
+                Console.WriteLine($"JSON file '{filePath}' created successfully.");
+
+                // Return the actual data or simply return without a value
+                // return o;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                // Handle the error as needed
+            }
+
+            // You can return the actual data or void based on your requirement
+            // return o;
         }
     }
 }

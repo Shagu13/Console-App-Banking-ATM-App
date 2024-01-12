@@ -20,7 +20,7 @@ namespace FinalProjectATM
 
             while (true)
             {
-                var path = new Path().GetPath();
+                var path = new filePath().GetPath();
                 var balance = new Brain(path).GetBalance();
                 Console.WriteLine("Please Select Currency 1:");
                 Console.WriteLine($"{(int)Currency.GEL}. {balance.amountGEL} GEL");
@@ -54,7 +54,7 @@ namespace FinalProjectATM
 
         public void ConvertMoney(Currency fromCurrency)
         {
-            var path = new Path().GetPath();
+            var path = new filePath().GetPath();
             var balance = new Brain(path).GetBalance();
 
             Console.Write($"How much {fromCurrency} would you like to convert? ");
@@ -139,7 +139,7 @@ namespace FinalProjectATM
 
         private void UpdateBalances(Currency fromCurrency, Currency toCurrency, double originalAmount, double convertedAmount)
         {
-            var path = new Path().GetPath();
+            var path = new filePath().GetPath();
             var brain = new Brain(path);
 
             var jsonData = brain.LoadData();

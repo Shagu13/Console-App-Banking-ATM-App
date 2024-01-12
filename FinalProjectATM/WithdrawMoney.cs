@@ -9,7 +9,7 @@ namespace FinalProjectATM
         {
             while (true)
             {
-                var path = new Path().GetPath();
+                var path = new filePath().GetPath();
                 var balance = new Brain(path).GetBalance();
                 Console.WriteLine("Please Select Currency:");
                 Console.WriteLine($"{(int)Currency.GEL}. {balance.amountGEL} GEL");
@@ -46,7 +46,7 @@ namespace FinalProjectATM
             Console.Write($"How much {currency} would you like to withdraw? ");
             if (double.TryParse(Console.ReadLine(), out double amount) && amount > 0)
             {
-                var path = new Path().GetPath();
+                var path = new filePath().GetPath();
                 var brain = new Brain(path);
                 var balance = brain.GetBalance();
                 var transaction = new Brain(path);

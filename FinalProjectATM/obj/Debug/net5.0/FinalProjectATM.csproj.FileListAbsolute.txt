@@ -16,3 +16,4 @@ C:\Users\User\Desktop\Programming\COMM School\FinalProjectATM\FinalProjectATM\ob
 C:\Users\User\Desktop\Programming\COMM School\FinalProjectATM\FinalProjectATM\obj\Debug\net5.0\FinalProjectATM.pdb
 C:\Users\User\Desktop\Programming\COMM School\FinalProjectATM\FinalProjectATM\obj\Debug\net5.0\FinalProjectATM.genruntimeconfig.cache
 C:\Users\User\Desktop\Programming\COMM School\FinalProjectATM\FinalProjectATM\obj\Debug\net5.0\ref\FinalProjectATM.dll
+C:\Users\User\Desktop\Programming\COMM School\FinalProjectATM\FinalProjectATM\obj\Debug\net5.0\FinalProjectATM.sourcelink.json

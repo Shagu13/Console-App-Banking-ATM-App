@@ -1,6 +1,6 @@
 {
-  "firstName": "John",
-  "lastName": "Doe",
+  "firstName": "Jony",
+  "lastName": "Walker",
   "cardDetails": {
     "cardNumber": "1234-1234-1234-1234",
     "expirationDate": "12/25",
@@ -9,39 +9,18 @@
   "pinCode": 1234,
   "transactionHistory": [
     {
-      "transactionDate": "2024-01-12 14:35:09",
-      "transactionType": "Deposit",
-      "amountGEL": 1000.0,
+      "transactionDate": "2024-01-12 17:09:07",
+      "transactionType": "Registration",
+      "amountGEL": 0.0,
       "amountUSD": 0.0,
       "amountEUR": 0.0
     },
     {
-      "transactionDate": "2024-01-12 14:35:18",
+      "transactionDate": "2024-01-12 17:09:22",
       "transactionType": "Deposit",
       "amountGEL": 1000.0,
-      "amountUSD": 700.0,
+      "amountUSD": 0.0,
       "amountEUR": 0.0
-    },
-    {
-      "transactionDate": "2024-01-12 14:35:23",
-      "transactionType": "Deposit",
-      "amountGEL": 1000.0,
-      "amountUSD": 700.0,
-      "amountEUR": 1500.0
-    },
-    {
-      "transactionDate": "2024-01-12 14:35:41",
-      "transactionType": "Converted",
-      "amountGEL": 2450.0,
-      "amountUSD": 700.0,
-      "amountEUR": 1000.0
-    },
-    {
-      "transactionDate": "2024-01-12 14:35:54",
-      "transactionType": "Checked Balance",
-      "amountGEL": 2450.0,
-      "amountUSD": 700.0,
-      "amountEUR": 1000.0
     }
   ]
 }
